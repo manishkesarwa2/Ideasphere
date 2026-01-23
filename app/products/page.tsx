@@ -29,11 +29,15 @@ export default function ProductsPage() {
             {products.map((product) => (
               <div
                 key={product.id}
-                className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-primary-300 hover:shadow-xl transition-all"
+                className="group bg-white border-2 border-gray-200 rounded-xl overflow-hidden hover:border-primary-400 hover:shadow-2xl transition-all hover:-translate-y-1"
               >
                 {/* Product Header */}
-                <div className="bg-gradient-to-br from-primary-100 to-accent-100 h-48 flex items-center justify-center relative">
-                  <div className="text-6xl">
+                <div className="relative bg-gradient-to-br from-primary-500 via-primary-600 to-accent-600 h-48 flex items-center justify-center overflow-hidden">
+                  <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                    <div className="absolute top-5 right-5 w-24 h-24 bg-white rounded-full blur-2xl"></div>
+                    <div className="absolute bottom-5 left-5 w-28 h-28 bg-white rounded-full blur-3xl"></div>
+                  </div>
+                  <div className="relative text-7xl filter drop-shadow-xl">
                     {product.category === "Platform"
                       ? "🚀"
                       : product.category === "AI Tool"
@@ -48,7 +52,7 @@ export default function ProductsPage() {
                   </div>
                   <div className="absolute top-4 right-4">
                     <span
-                      className={`px-3 py-1 rounded-full text-xs font-bold border ${
+                      className={`px-3 py-1 rounded-full text-xs font-bold border backdrop-blur-sm bg-white/90 ${
                         statusColors[product.status as keyof typeof statusColors]
                       }`}
                     >

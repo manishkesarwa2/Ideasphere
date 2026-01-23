@@ -87,7 +87,7 @@ export default function Home() {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
+                className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-2xl transition-all border border-gray-100 hover:border-primary-200 hover:-translate-y-1"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -131,34 +131,37 @@ export default function Home() {
             {products.slice(0, 6).map((product) => (
               <div
                 key={product.id}
-                className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-200 hover:border-primary-300 transition-all hover:shadow-lg"
+                className="group relative bg-white rounded-xl p-6 border-2 border-gray-200 hover:border-primary-400 transition-all hover:shadow-xl hover:-translate-y-1 overflow-hidden"
               >
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-gray-900">
-                    {product.name}
-                  </h3>
-                  <span
-                    className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                      product.status === "Live"
-                        ? "bg-green-100 text-green-800"
-                        : product.status === "Beta"
-                        ? "bg-blue-100 text-blue-800"
-                        : "bg-yellow-100 text-yellow-800"
-                    }`}
-                  >
-                    {product.status}
-                  </span>
-                </div>
-                <p className="text-gray-600 mb-4">{product.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {product.features.slice(0, 3).map((feature, idx) => (
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-100 to-accent-100 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative">
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-xl font-bold text-gray-900">
+                      {product.name}
+                    </h3>
                     <span
-                      key={idx}
-                      className="px-2 py-1 bg-primary-50 text-primary-700 rounded text-xs"
+                      className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                        product.status === "Live"
+                          ? "bg-green-100 text-green-800"
+                          : product.status === "Beta"
+                          ? "bg-blue-100 text-blue-800"
+                          : "bg-yellow-100 text-yellow-800"
+                      }`}
                     >
-                      {feature}
+                      {product.status}
                     </span>
-                  ))}
+                  </div>
+                  <p className="text-gray-600 mb-4">{product.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {product.features.slice(0, 3).map((feature, idx) => (
+                      <span
+                        key={idx}
+                        className="px-2 py-1 bg-primary-50 text-primary-700 rounded text-xs"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
@@ -189,7 +192,7 @@ export default function Home() {
             {workProcess.map((step) => (
               <div
                 key={step.step}
-                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative"
+                className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all relative hover:-translate-y-1 border border-gray-100 hover:border-primary-200"
               >
                 <div className="text-3xl mb-3">{step.icon}</div>
                 <div className="text-sm font-semibold text-primary-600 mb-2">
@@ -229,10 +232,16 @@ export default function Home() {
             {caseStudies.map((study) => (
               <div
                 key={study.id}
-                className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow"
+                className="group bg-white rounded-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-1 border border-gray-200"
               >
-                <div className="h-48 bg-gradient-to-br from-primary-200 to-accent-200 flex items-center justify-center">
-                  <p className="text-4xl">📊</p>
+                <div className="relative h-48 bg-gradient-to-br from-primary-500 via-primary-600 to-accent-600 flex items-center justify-center overflow-hidden">
+                  <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                    <div className="absolute top-5 right-5 w-20 h-20 bg-white rounded-full blur-2xl"></div>
+                    <div className="absolute bottom-5 left-5 w-24 h-24 bg-white rounded-full blur-2xl"></div>
+                  </div>
+                  <div className="relative">
+                    <p className="text-6xl filter drop-shadow-lg">📊</p>
+                  </div>
                 </div>
                 <div className="p-6">
                   <div className="text-sm text-primary-600 font-semibold mb-2">
