@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services, products, workProcess, caseStudies } from "@/data/content";
 
 export default function Home() {
@@ -60,13 +61,14 @@ export default function Home() {
                 Learn More About Us
               </Link>
             </div>
-            <div className="bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-6xl mb-4">🚀</p>
-                <p className="text-xl font-semibold text-gray-700">
-                  Building the Future, Together
-                </p>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl h-96">
+              <Image
+                src="/ideasphere-office.jpg"
+                alt="Ideasphere Venture Transformation Studio - Team collaborating with futuristic technology"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -234,14 +236,13 @@ export default function Home() {
                 key={study.id}
                 className="group bg-white rounded-xl overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-1 border border-gray-200"
               >
-                <div className="relative h-48 bg-gradient-to-br from-primary-500 via-primary-600 to-accent-600 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
-                    <div className="absolute top-5 right-5 w-20 h-20 bg-white rounded-full blur-2xl"></div>
-                    <div className="absolute bottom-5 left-5 w-24 h-24 bg-white rounded-full blur-2xl"></div>
-                  </div>
-                  <div className="relative">
-                    <p className="text-6xl filter drop-shadow-lg">📊</p>
-                  </div>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={study.image}
+                    alt={study.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="text-sm text-primary-600 font-semibold mb-2">

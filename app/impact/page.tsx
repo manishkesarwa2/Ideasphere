@@ -1,5 +1,6 @@
 import { caseStudies } from "@/data/content";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ImpactPage() {
   return (
@@ -58,19 +59,13 @@ export default function ImpactPage() {
                 <div className={`grid md:grid-cols-2 ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
                   {/* Visual */}
                   <div className={`${idx % 2 === 1 ? "md:order-2" : ""}` }>
-                    <div className="relative h-full min-h-[300px] bg-gradient-to-br from-primary-500 via-primary-600 to-accent-600 flex items-center justify-center overflow-hidden">
-                      <div className="absolute inset-0 opacity-10">
-                        <div className="absolute top-10 right-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
-                        <div className="absolute bottom-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
-                      </div>
-                      <div className="relative text-center">
-                        <div className="text-8xl mb-4 filter drop-shadow-2xl">📊</div>
-                        <div className="flex justify-center gap-2">
-                          <div className="w-2 h-2 bg-white/60 rounded-full"></div>
-                          <div className="w-2 h-2 bg-white/60 rounded-full"></div>
-                          <div className="w-2 h-2 bg-white/60 rounded-full"></div>
-                        </div>
-                      </div>
+                    <div className="relative h-full min-h-[300px] overflow-hidden">
+                      <Image
+                        src={study.image}
+                        alt={study.title}
+                        fill
+                        className="object-cover"
+                      />
                     </div>
                   </div>
 
