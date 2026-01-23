@@ -22,7 +22,7 @@ export default function ImpactPage() {
           <div className="grid md:grid-cols-4 gap-8 mb-16">
             {[
               { number: "50+", label: "Ventures Built" },
-              { number: "$25M+", label: "Funding Raised" },
+              { number: "95%", label: "Client Satisfaction" },
               { number: "100K+", label: "Users Impacted" },
               { number: "15+", label: "Industries" },
             ].map((stat, idx) => (

@@ -134,13 +134,13 @@ export const caseStudies = [
     results: [
       "10x user growth in 6 months",
       "40% improvement in engagement",
-      "$2M seed funding raised"
+      "85% user retention rate"
     ],
     image: "/case-studies/edtech.jpg",
     metrics: {
       growth: "900%",
       engagement: "+40%",
-      funding: "$2M"
+      retention: "85%"
     }
   },
   {
@@ -164,21 +164,21 @@ export const caseStudies = [
   },
   {
     id: 3,
-    title: "Sustainable Fashion Transformation",
-    client: "GreenThreads",
-    industry: "Fashion & Retail",
-    challenge: "Traditional fashion brand seeking digital-first transformation and sustainability focus.",
-    solution: "Redesigned business model, built D2C platform, implemented circular economy practices.",
+    title: "AI-Powered Recruitment Transformation",
+    client: "TalentCorp Solutions",
+    industry: "HR Technology & Recruitment",
+    challenge: "Manual recruitment process taking 45+ days with poor candidate quality and high dropout rates.",
+    solution: "Built Talentia AI platform with intelligent screening, automated matching, and smart interview scheduling.",
     results: [
-      "60% reduction in waste",
-      "3x online revenue growth",
-      "B Corp certification achieved"
+      "70% reduction in time-to-hire",
+      "5x improvement in candidate quality",
+      "90% reduction in manual screening time"
     ],
-    image: "/case-studies/fashion.jpg",
+    image: "/case-studies/recruitment.jpg",
     metrics: {
-      waste: "-60%",
-      revenue: "3x",
-      certification: "B Corp"
+      timeToHire: "-70%",
+      quality: "5x",
+      efficiency: "90%"
     }
   }
 ];
