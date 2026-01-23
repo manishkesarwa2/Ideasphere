@@ -66,7 +66,7 @@ export const services = [
 export const products = [
   {
     id: 1,
-    name: "Talentia AI",
+    name: "HireGenius AI",
     description: "AI-driven recruitment solution that solves most hiring challenges using intelligent automation and smart matching.",
     status: "Live",
     category: "HR Tech",
@@ -168,7 +168,7 @@ export const caseStudies = [
     client: "TalentCorp Solutions",
     industry: "HR Technology & Recruitment",
     challenge: "Manual recruitment process taking 45+ days with poor candidate quality and high dropout rates.",
-    solution: "Built Talentia AI platform with intelligent screening, automated matching, and smart interview scheduling.",
+    solution: "Built HireGenius AI platform with intelligent screening, automated matching, and smart interview scheduling.",
     results: [
       "70% reduction in time-to-hire",
       "5x improvement in candidate quality",
