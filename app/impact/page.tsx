@@ -207,7 +207,7 @@ export default function ImpactPage() {
             Ready to Create Impact?
           </h2>
           <p className="text-lg mb-8 opacity-90">
-            Let's build something meaningful together
+            Let&apos;s build something meaningful together
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

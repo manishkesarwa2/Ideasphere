@@ -208,7 +208,7 @@ export default function HowWeWorkPage() {
             Ready to Get Started?
           </h2>
           <p className="text-lg mb-8 opacity-90">
-            Let's discuss how our methodology can help transform your venture
+            Let&apos;s discuss how our methodology can help transform your venture
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

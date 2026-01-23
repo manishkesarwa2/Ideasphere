@@ -277,7 +277,7 @@ export default function Home() {
             </h2>
             <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
               Be part of building the next generation of impact-driven businesses.
-              We're always looking for passionate builders, designers, and strategists.
+              We&apos;re always looking for passionate builders, designers, and strategists.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -304,7 +304,7 @@ export default function Home() {
             Ready to Build Something Amazing?
           </h2>
           <p className="text-lg mb-8 opacity-90">
-            Let's discuss how we can help transform your idea or business into a
+            Let&apos;s discuss how we can help transform your idea or business into a
             thriving venture.
           </p>
           <Link

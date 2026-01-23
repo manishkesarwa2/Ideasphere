@@ -52,7 +52,7 @@ export default function AboutPage() {
               What Makes Us Different
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We're not just consultants or developers - we're your co-builders
+              We&apos;re not just consultants or developers - we&apos;re your co-builders
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 Co-Building Approach
               </h3>
               <p className="text-gray-600">
-                We don't just advise - we roll up our sleeves and build alongside you,
+                We don&apos;t just advise - we roll up our sleeves and build alongside you,
                 sharing both risk and reward.
               </p>
             </div>
@@ -102,7 +102,7 @@ export default function AboutPage() {
                 Knowledge Transfer
               </h3>
               <p className="text-gray-600">
-                We don't create dependency - we empower your team with skills and systems
+                We don&apos;t create dependency - we empower your team with skills and systems
                 to thrive independently.
               </p>
             </div>
@@ -187,7 +187,7 @@ export default function AboutPage() {
             Want to Build With Us?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Let's explore how we can help transform your idea or business.
+            Let&apos;s explore how we can help transform your idea or business.
           </p>
           <a
             href="/contact"

@@ -51,7 +51,7 @@ export default function ContactPage() {
             Get In <span className="gradient-text">Touch</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Let's discuss how we can help transform your idea or business into a
+            Let&apos;s discuss how we can help transform your idea or business into a
             thriving venture
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Let's Build Something Amazing
+                Let&apos;s Build Something Amazing
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Whether you have a specific project in mind, want to explore
@@ -327,7 +327,7 @@ export default function ContactPage() {
             <div className="bg-white p-8 rounded-xl text-center">
               <div className="text-5xl mb-4">🚀</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                3. Let's Build
+                3. Let&apos;s Build
               </h3>
               <p className="text-gray-600">
                 Once aligned, we kick off and start building your venture together

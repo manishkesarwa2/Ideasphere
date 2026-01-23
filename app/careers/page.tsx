@@ -246,7 +246,7 @@ export default function CareersPage() {
               Apply Now
             </h2>
             <p className="text-lg text-gray-600">
-              Send us your application and let's start a conversation
+              Send us your application and let&apos;s start a conversation
             </p>
           </div>
 
