@@ -14,23 +14,45 @@ export default function CareersPage() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Placeholder for form submission
-    console.log("Application submitted:", formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        position: "",
-        resume: "",
-        message: "",
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch('/api/applications', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      if (!response.ok) {
+        throw new Error('Failed to submit application');
+      }
+
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          position: "",
+          resume: "",
+          message: "",
+        });
+      }, 5000);
+    } catch (err) {
+      console.error('Error submitting application:', err);
+      setError('Failed to submit application. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -389,11 +411,18 @@ export default function CareersPage() {
                   ></textarea>
                 </div>
 
+                {error && (
+                  <div className="p-4 bg-red-500/20 border border-red-500 rounded-lg text-red-300 text-sm">
+                    {error}
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-colors text-lg btn-glow"
+                  disabled={isSubmitting}
+                  className="w-full px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-colors text-lg btn-glow disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Submit Application
+                  {isSubmitting ? 'Submitting...' : 'Submit Application'}
                 </button>
               </form>
             )}
