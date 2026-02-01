@@ -45,14 +45,14 @@ export default function CareersPage() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-dark-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-accent-50 py-20">
+      <section className="bg-dark-pattern py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Join <span className="gradient-text">Ideasphere</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Build the future with us. Work on cutting-edge ventures, learn from the
             best, and create meaningful impact.
           </p>
@@ -60,10 +60,10 @@ export default function CareersPage() {
       </section>
 
       {/* Why Join Us */}
-      <section className="py-16">
+      <section className="py-16 bg-dark-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Why Join Ideasphere?
             </h2>
           </div>
@@ -102,13 +102,13 @@ export default function CareersPage() {
             ].map((benefit, idx) => (
               <div
                 key={idx}
-                className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl border border-gray-200"
+                className="bg-gradient-to-br from-dark-700 to-dark-800 p-6 rounded-xl border border-gray-700 hover:border-primary-500 transition-all"
               >
                 <div className="text-4xl mb-3">{benefit.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold text-white mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600">{benefit.desc}</p>
+                <p className="text-gray-300">{benefit.desc}</p>
               </div>
             ))}
           </div>
@@ -116,13 +116,13 @@ export default function CareersPage() {
       </section>
 
       {/* Open Positions */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-dark-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Open Positions
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Full-time roles for experienced professionals
             </p>
           </div>
@@ -130,21 +130,21 @@ export default function CareersPage() {
             {careers.map((job) => (
               <div
                 key={job.id}
-                className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-8 shadow-sm hover:shadow-lg border border-gray-700 hover:border-primary-500 transition-all"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-2xl font-bold text-white mb-2">
                       {job.title}
                     </h3>
                     <div className="flex flex-wrap gap-3 text-sm">
-                      <span className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full font-semibold">
+                      <span className="px-3 py-1 bg-primary-500/20 text-primary-400 border border-primary-500/50 rounded-full font-semibold">
                         {job.type}
                       </span>
-                      <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full">
+                      <span className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full">
                         📍 {job.location}
                       </span>
-                      <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full">
+                      <span className="px-3 py-1 bg-gray-700 text-gray-300 rounded-full">
                         {job.department}
                       </span>
                     </div>
@@ -155,20 +155,20 @@ export default function CareersPage() {
                       form?.scrollIntoView({ behavior: "smooth" });
                       setFormData({ ...formData, position: job.title });
                     }}
-                    className="mt-4 md:mt-0 px-6 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold transition-colors"
+                    className="mt-4 md:mt-0 px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-colors btn-glow"
                   >
                     Apply Now
                   </button>
                 </div>
-                <p className="text-gray-600 mb-4">{job.description}</p>
+                <p className="text-gray-300 mb-4">{job.description}</p>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">
+                  <h4 className="font-semibold text-white mb-2">
                     Requirements:
                   </h4>
                   <ul className="space-y-1">
                     {job.requirements.map((req, idx) => (
-                      <li key={idx} className="text-gray-600 flex items-start">
-                        <span className="text-primary-500 mr-2">•</span>
+                      <li key={idx} className="text-gray-300 flex items-start">
+                        <span className="text-primary-400 mr-2">•</span>
                         {req}
                       </li>
                     ))}
@@ -181,13 +181,13 @@ export default function CareersPage() {
       </section>
 
       {/* Internship Programs */}
-      <section id="internships" className="py-16">
+      <section id="internships" className="py-16 bg-dark-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Internship Programs
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Learn by doing. Build real products. Grow your career.
             </p>
           </div>
@@ -195,25 +195,25 @@ export default function CareersPage() {
             {internships.map((program) => (
               <div
                 key={program.id}
-                className="bg-gradient-to-br from-primary-50 to-accent-50 rounded-xl p-8"
+                className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-xl p-8 border border-gray-700"
               >
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="text-2xl font-bold text-white mb-3">
                   {program.program}
                 </h3>
-                <div className="text-primary-600 font-semibold mb-4">
+                <div className="text-primary-400 font-semibold mb-4">
                   Duration: {program.duration}
                 </div>
-                <p className="text-gray-700 mb-6">{program.description}</p>
+                <p className="text-gray-300 mb-6">{program.description}</p>
 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">
+                  <h4 className="font-semibold text-white mb-3">
                     Available Tracks:
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {program.tracks.map((track, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-white text-primary-700 rounded-full text-sm font-semibold"
+                        className="px-3 py-1 bg-dark-700 text-primary-400 rounded-full text-sm font-semibold border border-primary-500/50"
                       >
                         {track}
                       </span>
@@ -222,11 +222,11 @@ export default function CareersPage() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">Benefits:</h4>
+                  <h4 className="font-semibold text-white mb-3">Benefits:</h4>
                   <ul className="space-y-2">
                     {program.benefits.map((benefit, idx) => (
-                      <li key={idx} className="flex items-start text-gray-700">
-                        <span className="text-primary-500 mr-2">✓</span>
+                      <li key={idx} className="flex items-start text-gray-300">
+                        <span className="text-primary-400 mr-2">✓</span>
                         {benefit}
                       </li>
                     ))}
@@ -239,25 +239,25 @@ export default function CareersPage() {
       </section>
 
       {/* Application Form */}
-      <section id="application-form" className="py-16 bg-gray-50">
+      <section id="application-form" className="py-16 bg-dark-pattern">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Apply Now
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Send us your application and let&apos;s start a conversation
             </p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="bg-dark-700/50 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-gray-700">
             {submitted ? (
               <div className="text-center py-12">
                 <div className="text-6xl mb-4">✓</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-white mb-2">
                   Application Submitted!
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-300">
                   Thank you for your interest. We'll review your application and get
                   back to you soon.
                 </p>
@@ -267,7 +267,7 @@ export default function CareersPage() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-semibold text-gray-700 mb-2"
+                    className="block text-sm font-semibold text-white mb-2"
                   >
                     Full Name *
                   </label>
@@ -278,7 +278,7 @@ export default function CareersPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-dark-800 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-white placeholder-gray-400"
                   />
                 </div>
 
@@ -286,7 +286,7 @@ export default function CareersPage() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
+                      className="block text-sm font-semibold text-white mb-2"
                     >
                       Email *
                     </label>
@@ -297,13 +297,13 @@ export default function CareersPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-dark-800 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-white placeholder-gray-400"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-semibold text-gray-700 mb-2"
+                      className="block text-sm font-semibold text-white mb-2"
                     >
                       Phone
                     </label>
@@ -313,7 +313,7 @@ export default function CareersPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-dark-800 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-white placeholder-gray-400"
                     />
                   </div>
                 </div>
@@ -321,7 +321,7 @@ export default function CareersPage() {
                 <div>
                   <label
                     htmlFor="position"
-                    className="block text-sm font-semibold text-gray-700 mb-2"
+                    className="block text-sm font-semibold text-white mb-2"
                   >
                     Position / Program *
                   </label>
@@ -331,7 +331,7 @@ export default function CareersPage() {
                     required
                     value={formData.position}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-dark-800 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-white"
                   >
                     <option value="">Select a position or program</option>
                     <optgroup label="Full-time Positions">
@@ -354,7 +354,7 @@ export default function CareersPage() {
                 <div>
                   <label
                     htmlFor="resume"
-                    className="block text-sm font-semibold text-gray-700 mb-2"
+                    className="block text-sm font-semibold text-white mb-2"
                   >
                     Resume / Portfolio URL *
                   </label>
@@ -366,14 +366,14 @@ export default function CareersPage() {
                     value={formData.resume}
                     onChange={handleChange}
                     placeholder="https://"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-dark-800 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-white placeholder-gray-400"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-semibold text-gray-700 mb-2"
+                    className="block text-sm font-semibold text-white mb-2"
                   >
                     Tell us about yourself *
                   </label>
@@ -385,13 +385,13 @@ export default function CareersPage() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Why are you interested in Ideasphere? What makes you a great fit?"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-dark-800 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-white placeholder-gray-400"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold transition-colors text-lg"
+                  className="w-full px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-colors text-lg btn-glow"
                 >
                   Submit Application
                 </button>

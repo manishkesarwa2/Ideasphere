@@ -4,21 +4,21 @@ import Image from "next/image";
 
 export default function ImpactPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-dark-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-accent-50 py-20">
+      <section className="bg-dark-pattern py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="gradient-text">Impact</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Real results from ventures we've helped build and transform
           </p>
         </div>
       </section>
 
       {/* Impact Stats */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-dark-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-16">
             {[
@@ -28,10 +28,10 @@ export default function ImpactPage() {
               { number: "15+", label: "Industries" },
             ].map((stat, idx) => (
               <div key={idx} className="text-center">
-                <div className="text-5xl font-bold text-primary-600 mb-2">
+                <div className="text-5xl font-bold text-primary-400 mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-gray-300 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -39,13 +39,13 @@ export default function ImpactPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-dark-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Case Studies
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               In-depth looks at how we've helped ventures succeed
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function ImpactPage() {
             {caseStudies.map((study, idx) => (
               <div
                 key={study.id}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg"
+                className="bg-dark-700/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-gray-700 hover:border-primary-500 transition-all"
               >
                 <div className={`grid md:grid-cols-2 ${idx % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
                   {/* Visual */}
@@ -71,51 +71,51 @@ export default function ImpactPage() {
 
                   {/* Content */}
                   <div className={`p-8 md:p-12 ${idx % 2 === 1 ? "md:order-1" : ""}`}>
-                    <div className="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-4">
+                    <div className="inline-block px-3 py-1 bg-primary-500/20 text-primary-400 border border-primary-500/50 rounded-full text-sm font-semibold mb-4">
                       {study.industry}
                     </div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-3xl font-bold text-white mb-2">
                       {study.title}
                     </h3>
-                    <p className="text-lg text-gray-600 mb-6">{study.client}</p>
+                    <p className="text-lg text-gray-300 mb-6">{study.client}</p>
 
                     {/* Challenge */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-gray-900 mb-2">
+                      <h4 className="font-semibold text-white mb-2">
                         The Challenge
                       </h4>
-                      <p className="text-gray-600">{study.challenge}</p>
+                      <p className="text-gray-300">{study.challenge}</p>
                     </div>
 
                     {/* Solution */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-gray-900 mb-2">
+                      <h4 className="font-semibold text-white mb-2">
                         Our Solution
                       </h4>
-                      <p className="text-gray-600">{study.solution}</p>
+                      <p className="text-gray-300">{study.solution}</p>
                     </div>
 
                     {/* Results */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-gray-900 mb-3">Results</h4>
+                      <h4 className="font-semibold text-white mb-3">Results</h4>
                       <ul className="space-y-2">
                         {study.results.map((result, ridx) => (
                           <li key={ridx} className="flex items-start">
-                            <span className="text-green-500 mr-2 mt-1">✓</span>
-                            <span className="text-gray-700">{result}</span>
+                            <span className="text-green-400 mr-2 mt-1">✓</span>
+                            <span className="text-gray-300">{result}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
                     {/* Metrics */}
-                    <div className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-200">
+                    <div className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-700">
                       {Object.entries(study.metrics).map(([key, value]) => (
                         <div key={key} className="text-center">
-                          <div className="text-2xl font-bold text-primary-600">
+                          <div className="text-2xl font-bold text-primary-400">
                             {value}
                           </div>
-                          <div className="text-xs text-gray-500 capitalize">
+                          <div className="text-xs text-gray-400 capitalize">
                             {key.replace(/([A-Z])/g, " $1").trim()}
                           </div>
                         </div>
@@ -130,13 +130,13 @@ export default function ImpactPage() {
       </section>
 
       {/* Industry Focus */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-dark-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Industries We Serve
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               We bring deep expertise across multiple sectors
             </p>
           </div>
@@ -155,10 +155,10 @@ export default function ImpactPage() {
             ].map((industry, idx) => (
               <div
                 key={idx}
-                className="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition-shadow"
+                className="bg-dark-700/50 backdrop-blur-sm p-6 rounded-xl text-center hover:shadow-md hover:border-primary-500 transition-all border border-gray-700"
               >
                 <div className="text-4xl mb-3">{industry.icon}</div>
-                <p className="font-semibold text-gray-900">{industry.name}</p>
+                <p className="font-semibold text-white">{industry.name}</p>
               </div>
             ))}
           </div>
@@ -166,10 +166,10 @@ export default function ImpactPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-dark-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               What Founders Say
             </h2>
           </div>
@@ -194,11 +194,11 @@ export default function ImpactPage() {
                 role: "Co-founder, GreenThreads",
               },
             ].map((testimonial, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-xl shadow-sm">
-                <p className="text-gray-600 mb-6 italic">"{testimonial.quote}"</p>
+              <div key={idx} className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700">
+                <p className="text-gray-300 mb-6 italic">"{testimonial.quote}"</p>
                 <div>
-                  <p className="font-semibold text-gray-900">{testimonial.author}</p>
-                  <p className="text-sm text-primary-600">{testimonial.role}</p>
+                  <p className="font-semibold text-white">{testimonial.author}</p>
+                  <p className="text-sm text-primary-400">{testimonial.role}</p>
                 </div>
               </div>
             ))}
@@ -207,28 +207,21 @@ export default function ImpactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary-600 to-accent-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className="py-16 bg-dark-pattern relative overflow-hidden">
+        <div className="absolute inset-0 bg-dark-900/10"></div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Create Impact?
           </h2>
-          <p className="text-lg mb-8 opacity-90">
+          <p className="text-lg mb-8 text-gray-300">
             Let&apos;s build something meaningful together
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="px-8 py-4 bg-white hover:bg-gray-100 text-primary-600 rounded-lg font-semibold transition-colors"
-            >
-              Start Your Journey
-            </Link>
-            <Link
-              href="/how-we-work"
-              className="px-8 py-4 bg-transparent hover:bg-white/10 text-white border-2 border-white rounded-lg font-semibold transition-colors"
-            >
-              See How We Work
-            </Link>
-          </div>
+          <Link
+            href="/contact"
+            className="inline-block px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-colors btn-glow"
+          >
+            Start Your Journey
+          </Link>
         </div>
       </section>
     </div>

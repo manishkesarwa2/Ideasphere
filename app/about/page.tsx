@@ -2,14 +2,14 @@ import { team } from "@/data/content";
 
 export default function AboutPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-dark-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-accent-50 py-20">
+      <section className="bg-dark-pattern py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             About <span className="gradient-text">Ideasphere</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             We are a Venture Transformation Studio on a mission to help people and
             businesses create next-generation, impact-driven businesses.
           </p>
@@ -17,23 +17,23 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16">
+      <section className="py-16 bg-dark-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-primary-50 to-white p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-primary-500/10 to-dark-700 p-8 rounded-2xl border border-gray-700">
               <div className="text-4xl mb-4">🎯</div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <h2 className="text-2xl font-bold text-white mb-4">Our Mission</h2>
+              <p className="text-gray-300 leading-relaxed">
                 To democratize entrepreneurship by making world-class venture building
                 capabilities accessible to everyone. We believe that with the right
                 guidance, tools, and technology, anyone can build businesses that create
                 positive impact for humanity and the planet.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-accent-50 to-white p-8 rounded-2xl">
+            <div className="bg-gradient-to-br from-accent-500/10 to-dark-700 p-8 rounded-2xl border border-gray-700">
               <div className="text-4xl mb-4">🌟</div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <h2 className="text-2xl font-bold text-white mb-4">Our Vision</h2>
+              <p className="text-gray-300 leading-relaxed">
                 A world where every great idea has the opportunity to become a thriving,
                 sustainable business. We envision an entrepreneurial ecosystem powered by
                 AI and modern technology, where innovation is accelerated and impact is
@@ -45,73 +45,73 @@ export default function AboutPage() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-dark-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               What Makes Us Different
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               We&apos;re not just consultants or developers - we&apos;re your co-builders
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
               <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Co-Building Approach
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 We don&apos;t just advise - we roll up our sleeves and build alongside you,
                 sharing both risk and reward.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
               <div className="text-4xl mb-4">🤖</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 AI-First Methodology
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 We leverage cutting-edge AI and automation to accelerate every phase of
                 venture building.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
               <div className="text-4xl mb-4">🌱</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Impact-Driven Focus
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Every venture we build is designed to create positive impact for people,
                 communities, and the planet.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
               <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Rapid Execution
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Our proven methodology helps launch MVPs in weeks, not months, so you can
                 validate and iterate quickly.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
               <div className="text-4xl mb-4">📚</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Knowledge Transfer
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 We don&apos;t create dependency - we empower your team with skills and systems
                 to thrive independently.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
               <div className="text-4xl mb-4">🌐</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 Ecosystem Access
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Tap into our network of mentors, investors, partners, and fellow founders
                 to accelerate growth.
               </p>
@@ -155,11 +155,11 @@ export default function AboutPage() {
       </section> */}
 
       {/* Values */}
-      <section className="py-16 bg-gradient-to-br from-primary-600 to-accent-600 text-white">
+      <section className="py-16 bg-dark-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Values</h2>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Values</h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Principles that guide everything we do
             </p>
           </div>
@@ -172,8 +172,8 @@ export default function AboutPage() {
             ].map((item, idx) => (
               <div key={idx} className="text-center">
                 <div className="text-5xl mb-3">{item.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{item.value}</h3>
-                <p className="opacity-90">{item.desc}</p>
+                <h3 className="text-xl font-bold text-white mb-2">{item.value}</h3>
+                <p className="text-gray-300">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -181,17 +181,17 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16">
+      <section className="py-16 bg-dark-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Want to Build With Us?
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-300 mb-8">
             Let&apos;s explore how we can help transform your idea or business.
           </p>
           <a
             href="/contact"
-            className="inline-block px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold transition-colors"
+            className="inline-block px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-colors btn-glow"
           >
             Start a Conversation
           </a>

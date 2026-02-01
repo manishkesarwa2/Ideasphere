@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-dark-900 text-white border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -41,32 +41,32 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/about" className="text-gray-400 hover:text-primary-400 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/services" className="text-gray-400 hover:text-primary-400 transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/products" className="text-gray-400 hover:text-primary-400 transition-colors">
                   Products
                 </Link>
               </li>
               <li>
-                <Link href="/how-we-work" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/how-we-work" className="text-gray-400 hover:text-primary-400 transition-colors">
                   How We Work
                 </Link>
               </li>
               <li>
-                <Link href="/impact" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/impact" className="text-gray-400 hover:text-primary-400 transition-colors">
                   Impact
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/careers" className="text-gray-400 hover:text-primary-400 transition-colors">
                   Careers
                 </Link>
               </li>
@@ -86,11 +86,11 @@ const Footer = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email"
                 required
-                className="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="w-full px-4 py-2 rounded-md bg-dark-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500"
               />
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-md transition-colors font-medium"
+                className="w-full px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-md transition-colors font-medium btn-glow"
               >
                 {subscribed ? "Subscribed! ✓" : "Subscribe"}
               </button>
@@ -109,7 +109,7 @@ const Footer = () => {
                 href={contactInfo.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-primary-400 transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@ const Footer = () => {
                 href={contactInfo.social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-primary-400 transition-colors"
                 aria-label="Twitter"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -131,7 +131,7 @@ const Footer = () => {
                 href={contactInfo.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-primary-400 transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
