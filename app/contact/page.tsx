@@ -1,9 +1,12 @@
 "use client";
 
 import { contactInfo } from "@/data/content";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function ContactPage() {
+  const searchParams = useSearchParams();
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,6 +14,14 @@ export default function ContactPage() {
     interest: "",
     message: "",
   });
+
+  // Pre-fill interest from URL parameter
+  useEffect(() => {
+    const interestParam = searchParams.get("interest");
+    if (interestParam) {
+      setFormData(prev => ({ ...prev, interest: interestParam }));
+    }
+  }, [searchParams]);
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -283,6 +294,8 @@ export default function ContactPage() {
                       <option value="growth-strategy">Growth Strategy</option>
                       <option value="products">Your Products</option>
                       <option value="partnership">Partnership Opportunities</option>
+                      <option value="career">Career Opportunities</option>
+                      <option value="training">Training</option>
                       <option value="other">Other</option>
                     </select>
                   </div>

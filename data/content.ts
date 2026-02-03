@@ -59,6 +59,18 @@ export const services = [
       "Risk Mitigation",
       "Shared Success Model"
     ]
+  },
+  {
+    id: 6,
+    title: "Training & Education",
+    description: "Empower your teams, students, and faculty with cutting-edge skills in AI, entrepreneurship, and technology through our comprehensive training programs.",
+    icon: "🎓",
+    features: [
+      "Corporate Training Programs",
+      "College & University Partnerships",
+      "Certification Courses",
+      "Faculty Development Programs"
+    ]
   }
 ];
 
@@ -321,6 +333,226 @@ export const team = [
     image: "/team/placeholder.jpg"
   }
 ];
+
+// Training programs data
+export const trainingPrograms = {
+  corporate: [
+    {
+      id: 1,
+      title: "AI & Machine Learning for Business",
+      duration: "2-3 days / Customizable",
+      level: "Intermediate",
+      description: "Equip your teams with practical AI skills to drive innovation and efficiency.",
+      topics: [
+        "AI Fundamentals & Use Cases",
+        "Machine Learning Implementation",
+        "Generative AI & ChatGPT for Business",
+        "AI Strategy & ROI"
+      ],
+      outcomes: [
+        "Understand AI capabilities and limitations",
+        "Identify AI opportunities in your business",
+        "Implement AI tools and workflows",
+        "Build AI-first culture"
+      ]
+    },
+    {
+      id: 2,
+      title: "Design Thinking & Innovation",
+      duration: "2 days",
+      level: "All Levels",
+      description: "Transform your team into innovation champions using human-centered design methodology.",
+      topics: [
+        "Design Thinking Framework",
+        "Problem Discovery & Definition",
+        "Ideation & Prototyping",
+        "Testing & Iteration"
+      ],
+      outcomes: [
+        "Master design thinking process",
+        "Generate innovative solutions",
+        "Build empathy-driven products",
+        "Create innovation culture"
+      ]
+    },
+    {
+      id: 3,
+      title: "Product Management Masterclass",
+      duration: "3 days",
+      level: "Intermediate to Advanced",
+      description: "Build world-class products with modern product management frameworks and tools.",
+      topics: [
+        "Product Strategy & Vision",
+        "User Research & Analytics",
+        "Roadmap Planning & Prioritization",
+        "Metrics & Growth"
+      ],
+      outcomes: [
+        "Define product strategy",
+        "Make data-driven decisions",
+        "Lead cross-functional teams",
+        "Drive product growth"
+      ]
+    },
+    {
+      id: 4,
+      title: "Digital Transformation Leadership",
+      duration: "2-3 days",
+      level: "Leadership / Executive",
+      description: "Lead your organization through digital transformation with confidence and clarity.",
+      topics: [
+        "Digital Strategy & Roadmap",
+        "Change Management",
+        "Technology Stack Selection",
+        "Measuring Digital ROI"
+      ],
+      outcomes: [
+        "Create digital transformation roadmap",
+        "Lead organizational change",
+        "Evaluate and select technologies",
+        "Drive digital adoption"
+      ]
+    }
+  ],
+  college: [
+    {
+      id: 1,
+      title: "Full-Stack with AI",
+      duration: "60-90 hours",
+      level: "Beginner to Intermediate",
+      description: "Learn full-stack development 3x faster using AI coding assistants and modern workflows. Industry-ready training with GitHub Copilot, ChatGPT, and AI-powered development tools.",
+      topics: [
+        "HTML, CSS, JavaScript with AI Tools",
+        "React & Next.js with GitHub Copilot",
+        "Node.js & APIs (AI-Assisted Development)",
+        "AI-Powered Debugging & Code Reviews",
+        "Database Design & Cloud Deployment"
+      ],
+      outcomes: [
+        "Build production-ready apps with AI assistance",
+        "Master GitHub Copilot & AI coding tools",
+        "3x faster development with AI workflows",
+        "Collaborate using Git & AI code reviews",
+        "Deploy to cloud platforms efficiently"
+      ],
+      badge: "Tech Career"
+    },
+    {
+      id: 2,
+      title: "AI & Data Science Program",
+      duration: "80-100 hours",
+      level: "Intermediate",
+      description: "Comprehensive AI and data science training with hands-on projects and real datasets.",
+      topics: [
+        "Python for Data Science",
+        "Machine Learning Algorithms",
+        "Deep Learning & Neural Networks",
+        "AI Project Development"
+      ],
+      outcomes: [
+        "Build ML models from scratch",
+        "Work with real-world datasets",
+        "Deploy AI applications",
+        "Create portfolio projects"
+      ],
+      badge: "High Demand"
+    },
+    {
+      id: 3,
+      title: "Entrepreneurship & Startup Bootcamp",
+      duration: "40-60 hours",
+      level: "All Levels",
+      description: "Transform ideas into businesses with our comprehensive entrepreneurship program.",
+      topics: [
+        "Idea Generation & Validation",
+        "Business Model Design",
+        "MVP Development",
+        "Pitching & Fundraising"
+      ],
+      outcomes: [
+        "Validate business ideas",
+        "Create business plans",
+        "Build MVPs",
+        "Pitch to investors"
+      ],
+      badge: null
+    },
+    {
+      id: 4,
+      title: "UI/UX Design & Figma Masterclass",
+      duration: "40-50 hours",
+      level: "Beginner to Intermediate",
+      description: "Design beautiful, user-centered products with industry-standard tools and methodologies.",
+      topics: [
+        "Design Principles & Theory",
+        "User Research & Testing",
+        "Figma & Design Tools",
+        "Portfolio Building"
+      ],
+      outcomes: [
+        "Create professional designs",
+        "Conduct user research",
+        "Build design portfolio",
+        "Work with design systems"
+      ],
+      badge: "Creative Career"
+    }
+  ],
+  faculty: [
+    {
+      id: 1,
+      title: "Teaching Innovation in Tech Education",
+      duration: "3-5 days",
+      level: "Faculty",
+      description: "Modern pedagogical approaches for teaching technology and innovation.",
+      topics: [
+        "Active Learning Techniques",
+        "Project-Based Learning",
+        "Industry Curriculum Integration",
+        "Assessment & Evaluation"
+      ]
+    },
+    {
+      id: 2,
+      title: "AI Tools for Educators",
+      duration: "2 days",
+      level: "Faculty",
+      description: "Leverage AI to enhance teaching, create content, and improve student outcomes.",
+      topics: [
+        "AI for Content Creation",
+        "Automated Assessment Tools",
+        "Personalized Learning with AI",
+        "Ethical AI in Education"
+      ]
+    }
+  ]
+};
+
+// Training benefits
+export const trainingBenefits = {
+  corporate: [
+    "Customized training aligned with business goals",
+    "Flexible delivery: On-site, Virtual, or Hybrid",
+    "Post-training support and resources",
+    "ROI-focused skill development",
+    "Expert trainers with industry experience"
+  ],
+  college: [
+    "Industry-aligned curriculum",
+    "Career guidance and support",
+    "Hands-on projects and internships",
+    "Certification upon completion",
+    "Dedicated student support",
+    "Free access to learning resources"
+  ],
+  faculty: [
+    "Modern teaching methodologies",
+    "Industry best practices",
+    "Networking with educators",
+    "Continuing education credits",
+    "Free teaching resources"
+  ]
+};
 
 // Contact info
 export const contactInfo = {
