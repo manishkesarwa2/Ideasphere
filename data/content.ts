@@ -59,18 +59,6 @@ export const services = [
       "Risk Mitigation",
       "Shared Success Model"
     ]
-  },
-  {
-    id: 6,
-    title: "Training & Education",
-    description: "Empower your teams, students, and faculty with cutting-edge skills in AI, entrepreneurship, and technology through our comprehensive training programs.",
-    icon: "🎓",
-    features: [
-      "Corporate Training Programs",
-      "College & University Partnerships",
-      "Certification Courses",
-      "Faculty Development Programs"
-    ]
   }
 ];
 
