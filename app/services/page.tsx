@@ -88,8 +88,8 @@ export default function ServicesPage() {
                 <li>• Ideal for MVPs</li>
               </ul>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border-2 border-primary-500 transition-all relative glass glass-shine">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary-500 text-white text-xs font-bold rounded-full">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border-2 border-primary-500 transition-all relative glass">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary-500 text-white text-xs font-bold rounded-full z-10">
                 Most Popular
               </div>
               <div className="text-4xl mb-4">🤝</div>

@@ -15,7 +15,7 @@ export const services = [
   {
     id: 2,
     title: "Product Development",
-    description: "We build your product end-to-end using modern tech. Web apps, mobile apps, AI-powered platforms � we ship production-ready software.",
+    description: "We build your product end-to-end using modern tech. Web apps, mobile apps, AI-powered platforms — we ship production-ready software.",
     icon: "💻",
     features: [
       "Full-Stack Web & Mobile Apps",
@@ -27,7 +27,7 @@ export const services = [
   {
     id: 3,
     title: "AI Product Development",
-    description: "We build intelligent products powered by AI � from GPT-powered tools to custom ML models and automation systems.",
+    description: "We build intelligent products powered by AI — from GPT-powered tools to custom ML models and automation systems.",
     icon: "🤖",
     features: [
       "Custom AI/ML Solutions",
@@ -69,7 +69,7 @@ export const portfolio = [
     name: "TalentMeta.ai",
     url: "https://www.talentmeta.ai/home",
     client: "Internal Venture",
-    description: "AI-powered recruitment platform that automates candidate screening, matching, and interview scheduling � reducing time-to-hire by 70%.",
+    description: "AI-powered recruitment platform that automates candidate screening, matching, and interview scheduling — reducing time-to-hire by 70%.",
     category: "AI / HR Tech",
     techStack: ["Next.js", "Python", "OpenAI", "PostgreSQL"],
     results: "70% faster hiring, 5x candidate quality improvement",
@@ -99,7 +99,7 @@ export const portfolio = [
     id: 4,
     name: "AgriDash",
     client: "FarmFirst India",
-    description: "IoT + AI dashboard for precision agriculture � helping farmers monitor crops, predict yields, and reduce water usage by 30%.",
+    description: "IoT + AI dashboard for precision agriculture — helping farmers monitor crops, predict yields, and reduce water usage by 30%.",
     category: "AgriTech",
     techStack: ["React", "Python", "IoT", "TensorFlow"],
     results: "30% water savings, 2x yield prediction accuracy",
@@ -201,7 +201,7 @@ export const workProcess = [
   {
     step: 2,
     title: "Design",
-    description: "We design the product experience � wireframes, prototypes, and a visual identity that users love.",
+    description: "We design the product experience — wireframes, prototypes, and a visual identity that users love.",
     icon: "🎨",
     duration: "2-3 weeks",
     deliverables: ["Wireframes & Prototypes", "UI Design System", "User Flows"]
@@ -209,7 +209,7 @@ export const workProcess = [
   {
     step: 3,
     title: "Build",
-    description: "We develop your product using modern, scalable tech � with weekly demos and continuous feedback loops.",
+    description: "We develop your product using modern, scalable tech — with weekly demos and continuous feedback loops.",
     icon: "⚙️",
     duration: "6-12 weeks",
     deliverables: ["Production-Ready Code", "API Documentation", "CI/CD Pipeline"]
@@ -266,7 +266,7 @@ export const careers = [
     type: "Full-time",
     location: "Remote",
     department: "Engineering",
-    description: "Build AI-powered features and products � from LLM integrations to custom ML models.",
+    description: "Build AI-powered features and products — from LLM integrations to custom ML models.",
     requirements: [
       "Experience with Python, PyTorch/TensorFlow",
       "Familiarity with LLM APIs (OpenAI, Claude, etc.)",
