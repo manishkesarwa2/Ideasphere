@@ -168,7 +168,6 @@ export default function ContactForm() {
               <option value="products">Your Products</option>
               <option value="partnership">Partnership Opportunities</option>
               <option value="career">Career Opportunities</option>
-              <option value="training">Training</option>
               <option value="other">Other</option>
             </select>
           </div>
