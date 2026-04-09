@@ -83,7 +83,7 @@ export default function ContactForm() {
             Message Sent!
           </h3>
           <p className="text-gray-300">
-            Thank you for reaching out. We'll get back to you within 24 hours.
+            Thank you for reaching out. We&apos;ll get back to you within 24 hours.
           </p>
         </div>
       ) : (
@@ -146,7 +146,7 @@ export default function ContactForm() {
               htmlFor="interest"
               className="block text-sm font-semibold text-white mb-2"
             >
-              I'm Interested In *
+              I&apos;m Interested In *
             </label>
             <select
               id="interest"
@@ -157,16 +157,12 @@ export default function ContactForm() {
               className="w-full px-4 py-3 bg-dark-800 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-white"
             >
               <option value="">Select an option</option>
-              <option value="venture-transformation">
-                Venture Transformation
-              </option>
-              <option value="co-building">Co-building a Venture</option>
-              <option value="product-development">
-                Product Development
-              </option>
-              <option value="growth-strategy">Growth Strategy</option>
-              <option value="products">Your Products</option>
-              <option value="partnership">Partnership Opportunities</option>
+              <option value="product-development">Product Development</option>
+              <option value="ai-product">AI-Powered Product</option>
+              <option value="product-design">Product Design & UX</option>
+              <option value="growth">Growth & Scaling</option>
+              <option value="co-building">Equity Co-Build</option>
+              <option value="partnership">Partnership</option>
               <option value="career">Career Opportunities</option>
               <option value="other">Other</option>
             </select>

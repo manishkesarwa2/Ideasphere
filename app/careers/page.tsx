@@ -75,8 +75,8 @@ export default function CareersPage() {
             Join <span className="gradient-text">Ideasphere</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Build the future with us. Work on cutting-edge ventures, learn from the
-            best, and create meaningful impact.
+            Ship real products, work with cutting-edge tech, and grow your craft at
+            a product studio that values speed, quality, and outcomes.
           </p>
         </div>
       </section>
@@ -93,13 +93,13 @@ export default function CareersPage() {
             {[
               {
                 icon: "🚀",
-                title: "Work on Real Ventures",
-                desc: "Build actual businesses that create impact, not just projects",
+                title: "Ship Real Products",
+                desc: "Build products that users actually use — not internal tools or throwaway prototypes",
               },
               {
                 icon: "📚",
-                title: "Learn & Grow",
-                desc: "Work with experienced founders and access world-class resources",
+                title: "Learn & Level Up",
+                desc: "Work across multiple products and tech stacks — accelerate your growth",
               },
               {
                 icon: "🌍",
@@ -108,8 +108,8 @@ export default function CareersPage() {
               },
               {
                 icon: "💰",
-                title: "Competitive Compensation",
-                desc: "Great pay plus equity opportunities in ventures you build",
+                title: "Equity Opportunities",
+                desc: "Competitive pay plus equity in products you co-build with us",
               },
               {
                 icon: "🎯",
@@ -280,7 +280,7 @@ export default function CareersPage() {
                   Application Submitted!
                 </h3>
                 <p className="text-gray-300">
-                  Thank you for your interest. We'll review your application and get
+                  Thank you for your interest. We&apos;ll review your application and get
                   back to you soon.
                 </p>
               </div>

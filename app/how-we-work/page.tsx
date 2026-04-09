@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import { workProcess } from "@/data/content";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Our Process - How Ideasphere Builds Products",
+  description: "Our 5-step product development process: Discovery, Design, Build, Launch, Grow. From idea to shipped product.",
+};
 
 export default function HowWeWorkPage() {
   return (
@@ -8,11 +14,10 @@ export default function HowWeWorkPage() {
       <section className="bg-dark-pattern py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            How We <span className="gradient-text">Work</span>
+            Our <span className="gradient-text">Process</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Our proven 5-step methodology to transform ideas into successful,
-            sustainable ventures
+            How we take your product from idea to launch and beyond — in 5 clear steps
           </p>
         </div>
       </section>
@@ -93,38 +98,38 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* Key Principles */}
+      {/* Principles */}
       <section className="py-16 bg-dark-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Our Guiding Principles
+              How We Think
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              What makes our methodology effective and unique
+              Principles that guide every product we build
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: "🎯",
-                title: "Human-Centered",
-                desc: "Start with people, not technology",
+                icon: "👤",
+                title: "User-First",
+                desc: "Start with the user problem, not the technology",
               },
               {
                 icon: "⚡",
-                title: "Rapid Iteration",
-                desc: "Build fast, learn faster, adapt quickly",
+                title: "Ship Weekly",
+                desc: "Deploy often, demo weekly, iterate constantly",
               },
               {
                 icon: "📊",
                 title: "Data-Driven",
-                desc: "Make decisions based on insights, not assumptions",
+                desc: "Measure everything, decide based on evidence",
               },
               {
-                icon: "🌱",
-                title: "Sustainable Growth",
-                desc: "Build for long-term impact, not quick wins",
+                icon: "🔄",
+                title: "Iterate Fast",
+                desc: "Launch lean, learn quickly, improve relentlessly",
               },
             ].map((principle, idx) => (
               <div key={idx} className="bg-dark-700/50 backdrop-blur-sm p-6 rounded-xl text-center shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
@@ -147,75 +152,47 @@ export default function HowWeWorkPage() {
               Typical Timeline
             </h2>
             <p className="text-lg text-gray-300">
-              From first conversation to launch and beyond
+              From kickoff to live product
             </p>
           </div>
           <div className="bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-2xl p-8 border border-gray-700">
             <div className="space-y-6">
-              <div className="flex items-center">
-                <div className="w-32 flex-shrink-0 font-semibold text-primary-400">
-                  Week 0-2
+              {[
+                { week: "Week 1-2", title: "Discovery & Research", desc: "User research, competitive analysis, and product brief" },
+                { week: "Week 3-5", title: "Design & Prototype", desc: "Wireframes, UI design, and clickable prototype" },
+                { week: "Week 6-16", title: "Build & Ship", desc: "Agile development with weekly demos and deployments" },
+                { week: "Week 17-18", title: "Launch & Optimize", desc: "Production launch, monitoring, and initial optimization" },
+                { week: "Ongoing", title: "Grow & Iterate", desc: "Feature iteration, growth experiments, and scaling" },
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-center">
+                  <div className="w-32 flex-shrink-0 font-semibold text-primary-400">
+                    {item.week}
+                  </div>
+                  <div className="flex-1 bg-dark-700 rounded-lg p-4 shadow-sm border border-gray-700">
+                    <p className="font-semibold text-white">{item.title}</p>
+                    <p className="text-sm text-gray-300">{item.desc}</p>
+                  </div>
                 </div>
-                <div className="flex-1 bg-dark-700 rounded-lg p-4 shadow-sm border border-gray-700">
-                  <p className="font-semibold text-white">Discovery & Mapping</p>
-                  <p className="text-sm text-gray-300">
-                    Skill assessment and opportunity identification
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <div className="w-32 flex-shrink-0 font-semibold text-primary-400">
-                  Week 3-5
-                </div>
-                <div className="flex-1 bg-dark-700 rounded-lg p-4 shadow-sm border border-gray-700">
-                  <p className="font-semibold text-white">Ideation & Strategy</p>
-                  <p className="text-sm text-gray-300">
-                    Idea generation and business model design
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <div className="w-32 flex-shrink-0 font-semibold text-primary-400">
-                  Week 6-18
-                </div>
-                <div className="flex-1 bg-dark-700 rounded-lg p-4 shadow-sm border border-gray-700">
-                  <p className="font-semibold text-white">Build & Launch</p>
-                  <p className="text-sm text-gray-300">
-                    MVP development and market entry
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <div className="w-32 flex-shrink-0 font-semibold text-primary-400">
-                  Ongoing
-                </div>
-                <div className="flex-1 bg-dark-700 rounded-lg p-4 shadow-sm border border-gray-700">
-                  <p className="font-semibold text-white">Growth & Scale</p>
-                  <p className="text-sm text-gray-300">
-                    Continuous optimization and expansion
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="py-16 bg-dark-pattern relative overflow-hidden">
-        <div className="absolute inset-0 bg-dark-900/10"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Get Started?
+            Ready to Start Building?
           </h2>
           <p className="text-lg mb-8 text-gray-300">
-            Let&apos;s discuss how our methodology can help transform your venture
+            Let&apos;s kick off with a discovery call and map out your product
           </p>
           <Link
             href="/contact"
             className="inline-block px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-colors btn-glow"
           >
-            Schedule Consultation
+            Book a Discovery Call
           </Link>
         </div>
       </section>

@@ -12,8 +12,8 @@ export default function ContactPage() {
             Get In <span className="gradient-text">Touch</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Let&apos;s discuss how we can help transform your idea or business into a
-            thriving venture
+            Have a product idea? Let&apos;s talk about how we can design, build, and
+            scale it together
           </p>
         </div>
       </section>
@@ -28,9 +28,8 @@ export default function ContactPage() {
                 Let&apos;s Build Something Amazing
               </h2>
               <p className="text-lg text-gray-300 mb-8">
-                Whether you have a specific project in mind, want to explore
-                partnership opportunities, or just want to learn more about what we do
-                - we'd love to hear from you.
+                Whether you have a product idea, need a development partner, or
+                want to explore a co-build — we&apos;d love to hear from you.
               </p>
 
               {/* Contact Details */}
@@ -161,7 +160,7 @@ export default function ContactPage() {
                 1. Initial Consultation
               </h3>
               <p className="text-gray-300">
-                We'll schedule a call to understand your needs, goals, and vision
+                We&apos;ll schedule a call to understand your needs, goals, and vision
               </p>
             </div>
             <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700">
@@ -170,7 +169,7 @@ export default function ContactPage() {
                 2. Proposal & Plan
               </h3>
               <p className="text-gray-300">
-                We'll create a tailored proposal with approach, timeline, and investment
+                We&apos;ll create a tailored proposal with scope, timeline, and investment
               </p>
             </div>
             <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700">
@@ -179,7 +178,7 @@ export default function ContactPage() {
                 3. Let&apos;s Build
               </h3>
               <p className="text-gray-300">
-                Once aligned, we kick off and start building your venture together
+                Once aligned, we kick off discovery and start building your product
               </p>
             </div>
           </div>

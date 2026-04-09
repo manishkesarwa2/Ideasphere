@@ -7,9 +7,9 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ideasphere - Building Next-Generation Businesses",
-  description: "Venture Transformation Studio helping people and businesses create impact-driven businesses using AI, technology, and modern growth strategies.",
-  keywords: ["venture transformation", "AI", "business strategy", "digital enablement", "startup studio"],
+  title: "Ideasphere - Product Studio | We Design, Build & Scale Digital Products",
+  description: "Ideasphere is a Product Studio that designs, builds, and scales digital products for startups and businesses. From AI-powered platforms to full-stack web apps — we ship.",
+  keywords: ["product studio", "product development", "AI development", "web app development", "startup product", "India"],
 };
 
 export default function RootLayout({

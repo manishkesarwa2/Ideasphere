@@ -1,136 +1,160 @@
-// Services data
+// Services - focused on product development
 export const services = [
   {
     id: 1,
-    title: "Venture Transformation",
-    description: "Transform your existing business or idea into a scalable, future-ready venture with our comprehensive transformation methodology.",
-    icon: "🚀",
+    title: "Product Strategy & Design",
+    description: "We help you define what to build and why. From market research to UX design, we turn fuzzy ideas into clear product roadmaps.",
+    icon: "🎯",
     features: [
-      "Business Model Innovation",
-      "Digital Transformation",
-      "Strategic Repositioning",
-      "Market Expansion"
+      "Product Discovery & Research",
+      "UX/UI Design & Prototyping",
+      "Product Roadmap & Strategy",
+      "User Testing & Validation"
     ]
   },
   {
     id: 2,
-    title: "Idea Generation & Product Design",
-    description: "Generate breakthrough ideas and design products that solve real problems with our human-centered approach.",
-    icon: "💡",
+    title: "Product Development",
+    description: "We build your product end-to-end using modern tech. Web apps, mobile apps, AI-powered platforms � we ship production-ready software.",
+    icon: "💻",
     features: [
-      "Design Thinking Workshops",
-      "Product Strategy",
-      "User Research",
-      "Rapid Prototyping"
+      "Full-Stack Web & Mobile Apps",
+      "AI & ML Integration",
+      "Cloud-Native Architecture",
+      "API & Backend Development"
     ]
   },
   {
     id: 3,
-    title: "Digital Enablement",
-    description: "Build robust digital infrastructure and platforms to power your modern business operations.",
-    icon: "⚡",
+    title: "AI Product Development",
+    description: "We build intelligent products powered by AI � from GPT-powered tools to custom ML models and automation systems.",
+    icon: "🤖",
     features: [
-      "Custom Software Development",
-      "AI & ML Integration",
-      "Cloud Architecture",
-      "API Development"
+      "Custom AI/ML Solutions",
+      "LLM & GenAI Applications",
+      "Intelligent Automation",
+      "Data Pipeline & Analytics"
     ]
   },
   {
     id: 4,
-    title: "Growth Strategy",
-    description: "Scale your business sustainably with data-driven growth strategies and modern marketing frameworks.",
+    title: "Product Growth & Scale",
+    description: "We help you take your product to market and scale it with data-driven growth strategies and performance optimization.",
     icon: "📈",
     features: [
-      "Growth Hacking",
-      "Performance Marketing",
-      "Community Building",
-      "Analytics & Optimization"
+      "Go-to-Market Strategy",
+      "Growth Engineering",
+      "Performance Optimization",
+      "Analytics & Experimentation"
     ]
   },
   {
     id: 5,
-    title: "Co-building Ventures",
-    description: "Partner with us to co-create and launch new ventures from scratch with shared risk and reward.",
+    title: "Venture Co-Building",
+    description: "For the right ideas, we go beyond client work. We co-build ventures with equity partnerships, sharing risk and reward.",
     icon: "🤝",
     features: [
-      "Joint Venture Setup",
-      "Resource Sharing",
-      "Risk Mitigation",
-      "Shared Success Model"
+      "Equity-Based Partnerships",
+      "End-to-End Venture Building",
+      "Shared Risk & Reward",
+      "Long-Term Strategic Support"
     ]
   }
 ];
 
-// Products data
-export const products = [
+// Portfolio / Work - real projects built
+export const portfolio = [
   {
     id: 1,
-    name: "HireGenius AI",
-    description: "AI-driven recruitment solution that solves most hiring challenges using intelligent automation and smart matching.",
-    status: "Live",
-    category: "HR Tech",
-    features: ["AI Candidate Matching", "Automated Screening", "Interview Scheduling", "Smart Analytics"]
+    name: "TalentMeta.ai",
+    url: "https://www.talentmeta.ai/home",
+    client: "Internal Venture",
+    description: "AI-powered recruitment platform that automates candidate screening, matching, and interview scheduling � reducing time-to-hire by 70%.",
+    category: "AI / HR Tech",
+    techStack: ["Next.js", "Python", "OpenAI", "PostgreSQL"],
+    results: "70% faster hiring, 5x candidate quality improvement",
+    image: "/case-studies/recruitment.jpg"
   },
   {
     id: 2,
-    name: "VentureOS",
-    description: "All-in-one operating system for managing startup operations, from ideation to scale.",
-    status: "Beta",
-    category: "Platform",
-    features: ["Project Management", "Investor Relations", "Team Collaboration"]
+    name: "LearnSpace Platform",
+    client: "LearnSpace Technologies",
+    description: "Scalable EdTech platform with AI-driven personalization that grew from 1K to 100K users in 6 months.",
+    category: "EdTech",
+    techStack: ["React", "Node.js", "AWS", "ML Pipeline"],
+    results: "900% user growth, 85% retention rate",
+    image: "/case-studies/edtech.jpg"
   },
   {
     id: 3,
-    name: "IdeaForge AI",
-    description: "AI-powered idea generation and validation platform for entrepreneurs and innovators.",
-    status: "MVP",
-    category: "AI Tool",
-    features: ["Idea Generation", "Market Validation", "Competitor Analysis"]
+    name: "HealthConnect",
+    client: "HealthConnect",
+    description: "HIPAA-compliant telemedicine platform built from scratch in 90 days with patient-first UX and real-time video consultations.",
+    category: "HealthTech",
+    techStack: ["Next.js", "WebRTC", "Node.js", "MongoDB"],
+    results: "5K+ consultations in month 1, 98% satisfaction",
+    image: "/case-studies/healthcare.jpg"
   },
   {
     id: 4,
-    name: "GrowthKit",
-    description: "Comprehensive growth toolkit with templates, frameworks, and automation for scaling businesses.",
-    status: "Live",
-    category: "SaaS",
-    features: ["Growth Templates", "Marketing Automation", "Analytics Dashboard"]
+    name: "AgriDash",
+    client: "FarmFirst India",
+    description: "IoT + AI dashboard for precision agriculture � helping farmers monitor crops, predict yields, and reduce water usage by 30%.",
+    category: "AgriTech",
+    techStack: ["React", "Python", "IoT", "TensorFlow"],
+    results: "30% water savings, 2x yield prediction accuracy",
+    image: "/case-studies/agritech.jpg"
   },
   {
     id: 5,
-    name: "SkillMapper Pro",
-    description: "Advanced skill assessment and mapping tool to identify strengths and build winning teams.",
-    status: "Beta",
-    category: "HR Tech",
-    features: ["Skill Assessment", "Team Building", "Career Pathways"]
+    name: "PayFlow",
+    client: "FinEdge Solutions",
+    description: "Digital payments and invoicing platform for SMEs with UPI integration, automated reconciliation, and GST-compliant billing.",
+    category: "FinTech",
+    techStack: ["React Native", "Node.js", "PostgreSQL", "UPI API"],
+    results: "2Cr+ transactions processed, 500+ SMEs onboarded",
+    image: "/case-studies/fintech.jpg"
   },
   {
     id: 6,
-    name: "ImpactTracker",
-    description: "Measure and communicate your venture's social and environmental impact with precision.",
-    status: "MVP",
-    category: "ESG",
-    features: ["Impact Metrics", "ESG Reporting", "Stakeholder Dashboard"]
-  },
-  {
-    id: 7,
-    name: "VentureStudio Hub",
-    description: "Community platform connecting entrepreneurs, mentors, and investors in one ecosystem.",
-    status: "Live",
-    category: "Community",
-    features: ["Networking", "Mentorship", "Events & Programs"]
+    name: "StyleSync",
+    client: "ThreadCraft",
+    description: "AI-powered fashion recommendation engine and D2C storefront with virtual try-on and personalized styling.",
+    category: "Fashion Tech",
+    techStack: ["Next.js", "Python", "Computer Vision", "Shopify API"],
+    results: "40% higher conversion, 3x average order value",
+    image: "/case-studies/fashion.jpg"
   }
 ];
 
-// Case studies data
+// Case studies (detailed versions)
 export const caseStudies = [
   {
     id: 1,
-    title: "EdTech Startup Scaling",
+    title: "AI-Powered Recruitment Platform",
+    client: "Internal Venture — TalentMeta.ai",
+    industry: "HR Technology",
+    challenge: "Manual recruitment processes taking 45+ days with poor candidate quality and high dropout rates across Indian companies.",
+    solution: "Built an AI-first recruitment platform with intelligent screening, automated matching algorithms, and smart interview scheduling.",
+    results: [
+      "70% reduction in time-to-hire",
+      "5x improvement in candidate quality",
+      "90% reduction in manual screening time"
+    ],
+    image: "/case-studies/recruitment.jpg",
+    metrics: {
+      timeToHire: "-70%",
+      quality: "5x",
+      efficiency: "90%"
+    }
+  },
+  {
+    id: 2,
+    title: "EdTech Platform Scaling",
     client: "LearnSpace Technologies",
     industry: "Education Technology",
-    challenge: "Struggling to scale from 1,000 to 100,000 users while maintaining quality and engagement.",
-    solution: "Implemented AI-driven personalization, rebuilt platform architecture, and designed growth loops.",
+    challenge: "Struggling to scale from 1,000 to 100,000 users while maintaining quality and engagement on the learning platform.",
+    solution: "Rebuilt platform architecture for scale, implemented AI-driven personalization, and designed viral growth loops.",
     results: [
       "10x user growth in 6 months",
       "40% improvement in engagement",
@@ -144,12 +168,12 @@ export const caseStudies = [
     }
   },
   {
-    id: 2,
-    title: "Healthcare Platform Launch",
+    id: 3,
+    title: "Telemedicine Platform Launch",
     client: "HealthConnect",
     industry: "Healthcare",
-    challenge: "Building a compliant telemedicine platform from scratch with limited resources.",
-    solution: "Co-built MVP in 3 months, ensured regulatory compliance, and designed patient-first UX.",
+    challenge: "Building a compliant telemedicine platform from scratch with limited resources and a 90-day deadline.",
+    solution: "Co-built the MVP with regulatory compliance baked in, designed patient-first UX, and launched on time.",
     results: [
       "Platform launched in 90 days",
       "5,000+ consultations in first month",
@@ -161,25 +185,6 @@ export const caseStudies = [
       consultations: "5K+",
       satisfaction: "98%"
     }
-  },
-  {
-    id: 3,
-    title: "AI-Powered Recruitment Transformation",
-    client: "TalentCorp Solutions",
-    industry: "HR Technology & Recruitment",
-    challenge: "Manual recruitment process taking 45+ days with poor candidate quality and high dropout rates.",
-    solution: "Built HireGenius AI platform with intelligent screening, automated matching, and smart interview scheduling.",
-    results: [
-      "70% reduction in time-to-hire",
-      "5x improvement in candidate quality",
-      "90% reduction in manual screening time"
-    ],
-    image: "/case-studies/recruitment.jpg",
-    metrics: {
-      timeToHire: "-70%",
-      quality: "5x",
-      efficiency: "90%"
-    }
   }
 ];
 
@@ -187,43 +192,43 @@ export const caseStudies = [
 export const workProcess = [
   {
     step: 1,
-    title: "Skill Mapping",
-    description: "Identify your unique strengths, capabilities, and resources through comprehensive assessment.",
-    icon: "🎯",
+    title: "Discovery",
+    description: "We understand your business, users, and goals through research, interviews, and market analysis.",
+    icon: "🔍",
     duration: "1-2 weeks",
-    deliverables: ["Skill Assessment Report", "Capability Matrix", "Resource Inventory"]
+    deliverables: ["Product Brief", "User Research", "Competitive Analysis"]
   },
   {
     step: 2,
-    title: "Idea Generation",
-    description: "Co-create breakthrough ideas aligned with your strengths and market opportunities.",
-    icon: "💭",
+    title: "Design",
+    description: "We design the product experience � wireframes, prototypes, and a visual identity that users love.",
+    icon: "🎨",
     duration: "2-3 weeks",
-    deliverables: ["Idea Portfolio", "Market Analysis", "Opportunity Mapping"]
+    deliverables: ["Wireframes & Prototypes", "UI Design System", "User Flows"]
   },
   {
     step: 3,
-    title: "Business Model Design",
-    description: "Design a robust, sustainable business model with clear value proposition and revenue streams.",
-    icon: "📐",
-    duration: "3-4 weeks",
-    deliverables: ["Business Model Canvas", "Financial Projections", "Go-to-Market Strategy"]
+    title: "Build",
+    description: "We develop your product using modern, scalable tech � with weekly demos and continuous feedback loops.",
+    icon: "⚙️",
+    duration: "6-12 weeks",
+    deliverables: ["Production-Ready Code", "API Documentation", "CI/CD Pipeline"]
   },
   {
     step: 4,
-    title: "Digital Enablement",
-    description: "Build the digital infrastructure, platforms, and tools needed to bring your venture to life.",
-    icon: "💻",
-    duration: "6-12 weeks",
-    deliverables: ["MVP Development", "Tech Stack Setup", "System Integration"]
+    title: "Launch",
+    description: "We deploy, monitor, and optimize your product for a smooth go-to-market launch.",
+    icon: "🚀",
+    duration: "1-2 weeks",
+    deliverables: ["Deployment & DevOps", "Launch Strategy", "Monitoring Setup"]
   },
   {
     step: 5,
-    title: "Growth & Co-Building",
-    description: "Launch, scale, and optimize with ongoing support, strategic guidance, and shared success.",
-    icon: "🌱",
+    title: "Grow",
+    description: "We continue to iterate, optimize, and scale your product based on real user data and feedback.",
+    icon: "📊",
     duration: "Ongoing",
-    deliverables: ["Launch Support", "Growth Playbook", "Continuous Optimization"]
+    deliverables: ["Growth Experiments", "Performance Optimization", "Feature Iteration"]
   }
 ];
 
@@ -235,11 +240,11 @@ export const careers = [
     type: "Full-time",
     location: "Remote / Hybrid",
     department: "Engineering",
-    description: "Build cutting-edge products using modern tech stack. Work on AI, web platforms, and mobile apps.",
+    description: "Build products for clients and our own ventures using React, Next.js, Node.js, and AI tools.",
     requirements: [
-      "3+ years of experience with React, Node.js, and cloud platforms",
-      "Experience with AI/ML integration is a plus",
-      "Passion for building impactful products"
+      "3+ years with React, Node.js, and cloud platforms",
+      "Experience shipping production products",
+      "Comfortable with AI tools like GitHub Copilot"
     ]
   },
   {
@@ -248,24 +253,24 @@ export const careers = [
     type: "Full-time",
     location: "Remote / Hybrid",
     department: "Design",
-    description: "Design beautiful, intuitive experiences for our ventures and client projects.",
+    description: "Design intuitive, beautiful product experiences for startups and enterprises across industries.",
     requirements: [
       "2+ years of product design experience",
-      "Strong portfolio showcasing UX/UI work",
+      "Strong portfolio showcasing end-to-end product work",
       "Figma proficiency required"
     ]
   },
   {
     id: 3,
-    title: "Growth Strategist",
+    title: "AI/ML Engineer",
     type: "Full-time",
     location: "Remote",
-    department: "Growth",
-    description: "Drive growth for multiple ventures using data-driven strategies and creative experiments.",
+    department: "Engineering",
+    description: "Build AI-powered features and products � from LLM integrations to custom ML models.",
     requirements: [
-      "Experience in growth marketing or strategy",
-      "Strong analytical and communication skills",
-      "Startup experience preferred"
+      "Experience with Python, PyTorch/TensorFlow",
+      "Familiarity with LLM APIs (OpenAI, Claude, etc.)",
+      "Track record of shipping AI features in production"
     ]
   }
 ];
@@ -274,14 +279,14 @@ export const careers = [
 export const internships = [
   {
     id: 1,
-    program: "Venture Building Internship",
+    program: "Product Building Internship",
     duration: "3-6 months",
-    description: "Work alongside founders and experienced builders to create new ventures from scratch.",
-    tracks: ["Product", "Engineering", "Design", "Growth"],
+    description: "Work on real client projects and ship features that thousands of users interact with.",
+    tracks: ["Full-Stack Development", "Product Design", "AI/ML", "Growth"],
     benefits: [
-      "Hands-on startup experience",
-      "Mentorship from industry experts",
-      "Potential full-time opportunity",
+      "Ship real products, not toy projects",
+      "Mentorship from experienced builders",
+      "Potential full-time offer",
       "Stipend provided"
     ]
   },
@@ -289,35 +294,35 @@ export const internships = [
     id: 2,
     program: "AI & Technology Internship",
     duration: "3 months",
-    description: "Build AI-powered products and learn cutting-edge technologies in a fast-paced environment.",
+    description: "Build AI-powered features and learn cutting-edge technologies in a product studio environment.",
     tracks: ["Machine Learning", "Backend Development", "Data Engineering"],
     benefits: [
-      "Real-world project experience",
+      "Real-world AI project experience",
       "Technical mentorship",
-      "Learning resources",
+      "Learning resources access",
       "Certificate of completion"
     ]
   }
 ];
 
-// Team members (for About page)
+// Team members
 export const team = [
   {
     name: "Mainshu",
     role: "Founder & CEO",
-    bio: "Serial entrepreneur with 5+ years building and scaling tech ventures.",
+    bio: "Product builder with 5+ years building and scaling tech products for startups and enterprises.",
     image: "/team/placeholder.jpg"
   },
   {
     name: "Priya",
     role: "Head of Product",
-    bio: "Product leader with experience at top tech companies, passionate about design thinking.",
+    bio: "Product leader passionate about design thinking and building user-first experiences.",
     image: "/team/placeholder.jpg"
   },
   {
     name: "Sunaina",
     role: "Chief Technology Officer",
-    bio: "Tech architect specializing in AI/ML and scalable systems.",
+    bio: "Tech architect specializing in AI/ML, cloud infrastructure, and scalable systems.",
     image: "/team/placeholder.jpg"
   }
 ];

@@ -8,11 +8,10 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
-    { href: "/products", label: "Products" },
-    { href: "/how-we-work", label: "How We Work" },
-    { href: "/impact", label: "Impact" },
+    { href: "/products", label: "Work" },
+    { href: "/how-we-work", label: "Process" },
+    { href: "/about", label: "About" },
     { href: "/careers", label: "Careers" },
     { href: "/contact", label: "Contact" },
   ];
