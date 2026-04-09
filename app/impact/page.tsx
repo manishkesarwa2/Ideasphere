@@ -34,7 +34,7 @@ export default function ImpactPage() {
             ].map((stat, idx) => (
               <div
                 key={idx}
-                className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-8 text-center shadow-sm border border-gray-700 hover:border-primary-500 transition-all"
+                className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-8 text-center shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine"
               >
                 <div className="text-4xl mb-3">{stat.icon}</div>
                 <div className="text-4xl md:text-5xl font-bold text-primary-400 mb-2">
@@ -62,7 +62,7 @@ export default function ImpactPage() {
             {caseStudies.map((study, idx) => (
               <div
                 key={idx}
-                className="bg-dark-700/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-gray-700"
+                className="bg-dark-700/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg border border-gray-700 glass glass-shine"
               >
                 <div className="grid md:grid-cols-2">
                   <div className="p-8 md:p-12">
@@ -152,7 +152,7 @@ export default function ImpactPage() {
             ].map((testimonial, idx) => (
               <div
                 key={idx}
-                className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-8 shadow-sm border border-gray-700"
+                className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-8 shadow-sm border border-gray-700 glass glass-shine"
               >
                 <div className="text-primary-400 text-4xl mb-4">&quot;</div>
                 <p className="text-gray-300 mb-6 italic">

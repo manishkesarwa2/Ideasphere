@@ -10,7 +10,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-accent-500/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fade-in-up">
-            <div className="inline-block px-4 py-2 bg-primary-500/10 border border-primary-500/30 rounded-full text-primary-400 text-sm font-semibold mb-6">
+            <div className="inline-block px-4 py-2 bg-primary-500/10 border border-primary-500/30 rounded-full text-primary-400 text-sm font-semibold mb-6 glass glass-shine">
               Product Studio — Delhi, India
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -25,7 +25,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/products"
-                className="px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-all btn-glow"
+                className="px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-all btn-glossy"
               >
                 See Our Work
               </Link>
@@ -99,7 +99,7 @@ export default function Home() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-6 text-center border border-gray-700 hover:border-primary-500 transition-all"
+                  className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-6 text-center border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine"
                 >
                   <div className="text-4xl mb-3">{item.icon}</div>
                   <p className="text-white font-semibold text-sm">{item.label}</p>
@@ -125,7 +125,7 @@ export default function Home() {
             {services.slice(0, 3).map((service) => (
               <div
                 key={service.id}
-                className="group bg-dark-800/50 backdrop-blur-sm rounded-xl p-6 shadow-sm hover:shadow-2xl hover:shadow-primary-500/20 transition-all border border-gray-700 hover:border-primary-500 hover:-translate-y-1"
+                className="group bg-dark-800/50 backdrop-blur-sm rounded-xl p-6 shadow-sm hover:shadow-2xl hover:shadow-primary-500/20 transition-all border border-gray-700 hover:border-primary-500 hover:-translate-y-1 glass glass-hover glass-shine"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -169,7 +169,7 @@ export default function Home() {
             {portfolio.slice(0, 6).map((project) => (
               <div
                 key={project.id}
-                className="group relative bg-dark-700/50 backdrop-blur-sm rounded-xl border-2 border-gray-700 hover:border-primary-500 transition-all hover:shadow-xl hover:shadow-primary-500/20 hover:-translate-y-1 overflow-hidden"
+                className="group relative bg-dark-700/50 backdrop-blur-sm rounded-xl border-2 border-gray-700 hover:border-primary-500 transition-all hover:shadow-xl hover:shadow-primary-500/20 hover:-translate-y-1 overflow-hidden glass glass-hover"
               >
                 <div className="p-6">
                   <div className="text-sm text-primary-400 font-semibold mb-2">
@@ -229,7 +229,7 @@ export default function Home() {
             {workProcess.map((step) => (
               <div
                 key={step.step}
-                className="group bg-dark-700/50 backdrop-blur-sm rounded-xl p-6 shadow-sm hover:shadow-xl hover:shadow-primary-500/20 transition-all relative hover:-translate-y-1 border border-gray-700 hover:border-primary-500"
+                className="group bg-dark-700/50 backdrop-blur-sm rounded-xl p-6 shadow-sm hover:shadow-xl hover:shadow-primary-500/20 transition-all relative hover:-translate-y-1 border border-gray-700 hover:border-primary-500 glass glass-hover glass-shine"
               >
                 <div className="text-3xl mb-3">{step.icon}</div>
                 <div className="text-sm font-semibold text-primary-400 mb-2">
@@ -269,7 +269,7 @@ export default function Home() {
             {caseStudies.map((study) => (
               <div
                 key={study.id}
-                className="group bg-dark-700/50 backdrop-blur-sm rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary-500/20 transition-all hover:-translate-y-1 border border-gray-700 hover:border-primary-500"
+                className="group bg-dark-700/50 backdrop-blur-sm rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary-500/20 transition-all hover:-translate-y-1 border border-gray-700 hover:border-primary-500 glass glass-hover"
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
@@ -346,7 +346,7 @@ export default function Home() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="bg-dark-800/80 backdrop-blur-sm rounded-xl p-5 text-center border border-gray-700"
+                  className="bg-dark-800/80 backdrop-blur-sm rounded-xl p-5 text-center border border-gray-700 glass glass-shine"
                 >
                   <div className="text-xl font-bold text-primary-400 mb-1">
                     {item.metric}

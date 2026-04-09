@@ -60,7 +60,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine">
               <div className="text-4xl mb-4">🏗️</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 We Ship, Not Slide
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 delivery, and real users from day one.
               </p>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine">
               <div className="text-4xl mb-4">🤖</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 AI-First Approach
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 products we build. This makes us 3x faster.
               </p>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine">
               <div className="text-4xl mb-4">🎯</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 Outcome-Focused
@@ -90,7 +90,7 @@ export default function AboutPage() {
                 outcomes. Your success is our KPI.
               </p>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine">
               <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 Fast Execution
@@ -100,7 +100,7 @@ export default function AboutPage() {
                 afford to wait. Neither can enterprises.
               </p>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine">
               <div className="text-4xl mb-4">🤝</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 Skin in the Game
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 in your idea, we bet on it.
               </p>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine">
               <div className="text-4xl mb-4">📚</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 Knowledge Transfer

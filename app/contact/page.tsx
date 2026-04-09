@@ -73,7 +73,8 @@ export default function ContactPage() {
                     <p className="text-gray-300">{contactInfo.address}</p>
                   </div>
                 </div>
-              </div>
+                </div>
+            </div>
 
             {/* Contact Form */}
             <Suspense fallback={
@@ -101,7 +102,7 @@ export default function ContactPage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700 glass glass-shine">
               <div className="text-5xl mb-4">📝</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 1. Initial Consultation
@@ -110,7 +111,7 @@ export default function ContactPage() {
                 We&apos;ll schedule a call to understand your needs, goals, and vision
               </p>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700 glass glass-shine">
               <div className="text-5xl mb-4">🎯</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 2. Proposal & Plan
@@ -119,7 +120,7 @@ export default function ContactPage() {
                 We&apos;ll create a tailored proposal with scope, timeline, and investment
               </p>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl text-center border border-gray-700 glass glass-shine">
               <div className="text-5xl mb-4">🚀</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 3. Let&apos;s Build

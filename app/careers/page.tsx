@@ -152,7 +152,7 @@ export default function CareersPage() {
             {careers.map((job) => (
               <div
                 key={job.id}
-                className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-8 shadow-sm hover:shadow-lg border border-gray-700 hover:border-primary-500 transition-all"
+                className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-8 shadow-sm hover:shadow-lg border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
@@ -272,7 +272,7 @@ export default function CareersPage() {
             </p>
           </div>
 
-          <div className="bg-dark-700/50 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-gray-700">
+            <div className="bg-dark-700/50 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-gray-700 glass glass-shine">
             {submitted ? (
               <div className="text-center py-12">
                 <div className="text-6xl mb-4">✓</div>

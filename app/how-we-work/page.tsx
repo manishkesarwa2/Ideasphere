@@ -69,7 +69,7 @@ export default function HowWeWorkPage() {
                     </div>
                   </div>
                   <p className="text-lg text-gray-300 mb-6">{step.description}</p>
-                  <div className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+                    <div className="bg-dark-700/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700 glass glass-shine">
                     <h3 className="font-semibold text-white mb-3">
                       Deliverables:
                     </h3>
@@ -132,7 +132,7 @@ export default function HowWeWorkPage() {
                 desc: "Launch lean, learn quickly, improve relentlessly",
               },
             ].map((principle, idx) => (
-              <div key={idx} className="bg-dark-700/50 backdrop-blur-sm p-6 rounded-xl text-center shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
+              <div key={idx} className="bg-dark-700/50 backdrop-blur-sm p-6 rounded-xl text-center shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine">
                 <div className="text-5xl mb-4">{principle.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-2">
                   {principle.title}

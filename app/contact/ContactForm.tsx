@@ -75,7 +75,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-dark-700/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
+    <div className="bg-dark-700/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 glass glass-shine">
       {submitted ? (
         <div className="text-center py-12">
           <div className="text-6xl mb-4">✓</div>

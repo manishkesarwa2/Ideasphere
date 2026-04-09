@@ -29,7 +29,7 @@ export default function WorkPage() {
             {portfolio.map((project) => (
               <div
                 key={project.id}
-                className="group bg-dark-700/50 backdrop-blur-sm border-2 border-gray-700 rounded-xl overflow-hidden hover:border-primary-500 hover:shadow-2xl hover:shadow-primary-500/20 transition-all"
+                className="group bg-dark-700/50 backdrop-blur-sm border-2 border-gray-700 rounded-xl overflow-hidden hover:border-primary-500 hover:shadow-2xl hover:shadow-primary-500/20 transition-all glass glass-hover"
               >
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-4">
@@ -111,7 +111,7 @@ export default function WorkPage() {
             ].map((industry, idx) => (
               <div
                 key={idx}
-                className="bg-dark-700/50 backdrop-blur-sm p-4 rounded-xl text-center hover:border-primary-500 transition-all border border-gray-700"
+                className="bg-dark-700/50 backdrop-blur-sm p-4 rounded-xl text-center hover:border-primary-500 transition-all border border-gray-700 glass glass-hover"
               >
                 <div className="text-3xl mb-2">{industry.icon}</div>
                 <p className="font-semibold text-white text-sm">{industry.name}</p>

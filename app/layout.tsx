@@ -20,11 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        {/* Ambient glow orbs */}
+        <div className="glass-orb-1" aria-hidden="true" />
+        <div className="glass-orb-2" aria-hidden="true" />
+        <div className="relative z-10">
+          <Navbar />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

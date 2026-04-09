@@ -88,7 +88,7 @@ export default function ServicesPage() {
                 <li>• Ideal for MVPs</li>
               </ul>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border-2 border-primary-500 transition-all relative">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border-2 border-primary-500 transition-all relative glass glass-shine">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary-500 text-white text-xs font-bold rounded-full">
                 Most Popular
               </div>
@@ -105,7 +105,7 @@ export default function ServicesPage() {
                 <li>• Continuous delivery</li>
               </ul>
             </div>
-            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all">
+            <div className="bg-dark-700/50 backdrop-blur-sm p-8 rounded-xl shadow-sm border border-gray-700 hover:border-primary-500 transition-all glass glass-hover glass-shine">
               <div className="text-4xl mb-4">💎</div>
               <h3 className="text-xl font-bold text-white mb-3">
                 Equity Co-Build
@@ -141,7 +141,7 @@ export default function ServicesPage() {
               { category: "AI / ML", tools: "OpenAI, LangChain, PyTorch, TensorFlow" },
               { category: "Cloud & DevOps", tools: "AWS, Vercel, Docker, CI/CD" },
             ].map((stack, idx) => (
-              <div key={idx} className="bg-dark-700/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-primary-500 transition-all text-center">
+              <div key={idx} className="bg-dark-700/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-primary-500 transition-all text-center glass glass-hover glass-shine">
                 <h3 className="text-lg font-bold text-primary-400 mb-3">
                   {stack.category}
                 </h3>
